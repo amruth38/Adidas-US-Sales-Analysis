@@ -2,25 +2,26 @@
 
 ## Table of Contents
 
+# Table of Contents
+
 1. [Objective](#objective)
 2. [Project Highlights](#project-highlights)
-   - [Key Metrics](#key-metrics)
-   - [Analysis Areas](#analysis-areas)
+   - Key Metrics
+   - Analysis Areas
 3. [Data Source](#data-source)
 4. [Methodology](#methodology)
-   - [Data Cleaning and Preparation](#data-cleaning-and-preparation)
-   - [Visualization](#visualization)
-   - [Analysis](#analysis)
+   - Data Cleaning and Preparation
+   - Visualization
+   - Analysis
 5. [Tools and Technologies](#tools-and-technologies)
 6. [Key Insights](#key-insights)
-   - [Gender Preference Target Audience for Profits](#gender-preference-target-audience-for-profits)
-   - [Sales Method's Influence on Operating Profits](#sales-methods-influence-on-operating-profits)
-   - [Profit Margins vs Operating Profits](#profit-margins-vs-operating-profits)
+   - Gender Preference Target Audience for Profits
+   - Sales Method's Influence on Operating Profits
+   - Profit Margins vs Operating Profits
 7. [Future Improvements](#future-improvements)
 8. [Challenges and Solutions](#challenges-and-solutions)
 9. [How to Use](#how-to-use)
 10. [Contact](#contact)
-
 
 ## Objective
 The goal of this project is to analyze Adidas' sales data to identify key insights that can enhance sales performance and optimize business strategies. This involves exploring trends, uncovering growth opportunities, and understanding customer preferences.
