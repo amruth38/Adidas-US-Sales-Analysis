@@ -2,8 +2,6 @@
 
 ## Table of Contents
 
-# Table of Contents
-
 1. [Objective](#objective)
 2. [Project Highlights](#project-highlights)
    - Key Metrics
