@@ -1,5 +1,20 @@
 # Adidas US Sales Analysis
 
+## Table of Contents
+- [Objective](#objective)
+- [Project Highlights](#project-highlights)
+  - [Key Metrics](#key-metrics)
+  - [Analysis Areas](#analysis-areas)
+- [Data Source](#data-source)
+- [Methodology](#methodology)
+- [Tools and Technologies](#tools-and-technologies)
+- [Key Insights](#key-insights)
+- [Challenges and Solutions](#challenges-and-solutions)
+- [Future Improvements](#future-improvements)
+- [How to Use](#how-to-use)
+- [Contact](#contact)
+
+
 ## Objective
 The goal of this project is to analyze Adidas' sales data to identify key insights that can enhance sales performance and optimize business strategies. This involves exploring trends, uncovering growth opportunities, and understanding customer preferences.
 
