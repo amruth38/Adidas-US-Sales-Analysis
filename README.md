@@ -70,11 +70,6 @@ The goal of this project is to analyze Adidas' sales data to identify key insigh
 
 ---
 
-## Data Source
-The data for this analysis was sourced from [Kaggle - Adidas Sales Dataset](https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-dataset).
-
----
-
 ## Methodology
 1. **Data Cleaning and Preparation:**
    - Processed the dataset to calculate total sales, profits, and average price per unit.
@@ -186,6 +181,11 @@ The data for this analysis was sourced from [Kaggle - Adidas Sales Dataset](http
 1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-dataset).
 2. Follow the methodology outlined above to replicate the analysis.
 3. Explore the findings and insights to understand Adidas US sales performance.
+   
+---
+
+## Data Source
+The data for this analysis was sourced from [Kaggle - Adidas Sales Dataset](https://www.kaggle.com/datasets/heemalichaudhari/adidas-sales-dataset).
 
 ---
 
