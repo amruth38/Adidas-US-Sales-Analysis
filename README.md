@@ -1,18 +1,25 @@
 # Adidas US Sales Analysis
 
 ## Table of Contents
-- [Objective](#objective)
-- [Project Highlights](#project-highlights)
-  - [Key Metrics](#key-metrics)
-  - [Analysis Areas](#analysis-areas)
-- [Data Source](#data-source)
-- [Methodology](#methodology)
-- [Tools and Technologies](#tools-and-technologies)
-- [Key Insights](#key-insights)
-- [Challenges and Solutions](#challenges-and-solutions)
-- [Future Improvements](#future-improvements)
-- [How to Use](#how-to-use)
-- [Contact](#contact)
+
+1. [Objective](#objective)
+2. [Project Highlights](#project-highlights)
+   - [Key Metrics](#key-metrics)
+   - [Analysis Areas](#analysis-areas)
+3. [Data Source](#data-source)
+4. [Methodology](#methodology)
+   - [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+   - [Visualization](#visualization)
+   - [Analysis](#analysis)
+5. [Tools and Technologies](#tools-and-technologies)
+6. [Key Insights](#key-insights)
+   - [Gender Preference Target Audience for Profits](#gender-preference-target-audience-for-profits)
+   - [Sales Method's Influence on Operating Profits](#sales-methods-influence-on-operating-profits)
+   - [Profit Margins vs Operating Profits](#profit-margins-vs-operating-profits)
+7. [Future Improvements](#future-improvements)
+8. [Challenges and Solutions](#challenges-and-solutions)
+9. [How to Use](#how-to-use)
+10. [Contact](#contact)
 
 
 ## Objective
@@ -90,25 +97,89 @@ The data for this analysis was sourced from [Kaggle - Adidas Sales Dataset](http
 ---
 
 ## Key Insights
-- Charleston leads in profitability with a well-balanced gender-wise profit distribution.
-- West Gear is the top retailer, followed by Foot Locker and Sports Direct.
-- Opportunities to boost women's apparel sales in multiple cities.
-- Profitability varies significantly based on sales methods, with some cities underutilizing online and outlet channels.
 
----
+1. **Gender Preference Target Audience for Profits:**
+   - **San Francisco**:
+     - Balanced profits from both male and female products, with a slight edge from men's products.
+     - Significant opportunity to improve sales in Women’s Apparel, which is currently the lowest-performing category in the city.
+   - **Portland**:
+     - Equal profit distribution between men’s and women’s products.
+     - Opportunity to improve sales in Men’s Apparel, which is the lowest in the top 5 cities.
+   - **Miami**:
+     - Profits are concentrated in Men’s Street Footwear and Women’s Apparel.
+     - Significant gaps in sales for Women's Athletic Footwear and Men’s Street Footwear, indicating areas for growth.
+   - **New York**:
+     - Strong performance from Men’s Street Footwear and Women’s Athletic Footwear.
+     - Opportunity to boost Women's Apparel sales, which is not performing as well.
+   - **Charleston**:
+     - Balanced gender-wise profit distribution, with strong performances in both Men’s and Women’s Apparel and Men’s Athletic Footwear.
+     - Charleston is the top performer in gender-balanced product categories, highlighting its well-rounded market appeal.
 
-## Challenges and Solutions
-1. **Challenge:** Formatting sales graph axis to display in millions.  
-   **Solution:** Adjusted axis settings in Excel (`Right Click > Format Axis > Display Units > Millions`).
-2. **Challenge:** Categorizing products by gender.  
-   **Solution:** Used a formula to identify "Women" products and classify accordingly.
+2. **Sales Method's Influence on Operating Profits:**
+   - **San Francisco**: 
+     - Majority of profits come from outlets, with very few from online and no in-store sales. This indicates an opportunity to diversify sales channels.
+   - **Portland**: 
+     - Profits are well balanced across online, in-store, and outlet channels, reflecting a more diversified and healthy sales strategy.
+   - **Miami**: 
+     - Lacks outlet sales, with most profits coming from stores. This underutilization of online and outlet channels presents a growth opportunity.
+   - **New York**: 
+     - Primarily profits from outlets, with fewer profits from stores and online channels. There's potential to boost online and in-store sales.
+   - **Charleston**: 
+     - A balanced mix of online and in-store sales, with no outlet sales, suggesting that further expansion into outlet channels could be explored.
+
+3. **Profit Margins vs Operating Profits:**
+   - **Charleston**: 
+     - High operating profit margin that aligns well with overall profits and total sales, indicating a healthy, efficient market strategy.
+   - **New York**: 
+     - Low operating profit margin despite high total sales, suggesting that improving efficiency or cost management could help boost profitability.
+   - **Miami and Portland**: 
+     - Both cities exhibit healthier profit margins compared to others, with Miami slightly outperforming Portland in margin.
+   - **San Francisco**: 
+     - Operating profit margin is relatively low considering its total sales and profits, indicating inefficiencies that need addressing.
+
 
 ---
 
 ## Future Improvements
-- Expand analysis to include regional and seasonal trends.
-- Incorporate machine learning models to predict future sales trends.
-- Optimize retailer-wise sales strategies for better profit margins.
+- **Expand Analysis**: Include regional, seasonal trends, and demographic insights to refine targeting.
+- **Predictive Modeling**: Forecast future sales and optimize inventory with machine learning.
+- **Refine Strategies**: Tailor city and retailer-specific sales strategies based on insights.
+
+---
+
+## Challenges and Solutions
+
+1. **Data Cleaning and Transformation**:
+   - **Problem**: Inconsistent descriptions and missing values.
+   - **Solution**: Use `=TRIM()`, `=SUBSTITUTE()`, `=CLEAN()` to clean data. For blanks, use `=IF(ISBLANK(A2), "N/A", A2)`.
+
+2. **Creating a Multi-Axis Chart**:
+   - **Problem**: Difficult to create a chart with three axes (Average Operating Profit Margin vs Operating Profits vs Cities).
+   - **Solution**: 
+     - Create a Combo Chart: Select Data → Insert → Combo Chart → Custom Combination.
+     - Assign Average Operating Profit Margin to the secondary axis.
+     - Set Operating Profit to the primary axis and use cities for the horizontal axis.
+     - Adjust axis scales and chart types (Column for Operating Profits, Line for Profit Margin).
+    
+3. **Sales Trend Analysis at Different Levels**:
+   - **Problem**: Difficult to analyze trends by year, quarter, month.
+   - **Solution**: Create PivotTable → Group by Date → Insert PivotChart for trend analysis.
+
+4. **Formatting Sales Graph Axis to Display in Millions**:
+   - **Problem**: Unable to change axis to display sales in millions.
+   - **Solution**: Right-click on axis → Format Axis → Display Units → Millions.
+
+5. **Categorizing Products by Gender**:
+   - **Problem**: Need to specify product gender.
+   - **Solution**: Add “gender” column. Use formula `=IF(ISNUMBER(SEARCH("Women", G2)), "Female", "Male")`.
+
+6. **Visualizing Profit Margins by City**:
+   - **Problem**: Difficulty comparing profit margins.
+   - **Solution**: Create scatter plot with profit margins on one axis and total sales on the other.
+
+7. **Dynamic Chart Updates**:
+   - **Problem**: Charts not updating with new data.
+   - **Solution**: Use Excel Tables for auto-updating charts: Select Data → Insert → Table → Format as Table.
 
 ---
 
