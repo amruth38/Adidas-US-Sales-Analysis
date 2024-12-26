@@ -1,5 +1,7 @@
 # Adidas US Sales Analysis
 
+![Executive Dashboard Image](https://github.com/user-attachments/assets/eece375b-b74c-4d39-805f-555fa826ab96)
+
 ## Table of Contents
 
 1. [Objective](#objective)
